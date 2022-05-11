@@ -20,8 +20,7 @@ class LocalService: Service() {
     inner class LocalBinder : Binder() {
         fun getService(): LocalService = this@LocalService
     }
-
-
+    
     override fun onBind(intent: Intent): IBinder {
         return binder
     }
